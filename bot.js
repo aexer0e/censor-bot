@@ -31,4 +31,4 @@ bot.on('messageUpdate', (oldMessage, newMessage) => {
 
  });
 
-bot.login('NjY1NjI5MTA1ODAyMzEzNzU5.XhtH4A.MrSAHQCB35ITFuLJJVSzlyaE-mY');
+bot.login(process.env.BOT_TOKEN);
