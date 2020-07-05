@@ -49,6 +49,25 @@ bot.on('message', (message) => {
         }
         message.channel.send(text.join(""));
     };
+
+    if(message.content == 'sensei mock') {
+        message.delete();
+        text = message.content
+        text = (text).split("")
+        x = true
+        for (let i = 0; i < text.length; i++) {
+            if (x) {
+                text[i] = (text[i]).toLowerCase()
+                x = false
+            }
+            else {
+                text[i] = (text[i]).toUpperCase()
+                x = true
+            }
+        }
+        message.channel.send(text.join(""));
+    };
+    cached_message = message.content
 });
 
 
