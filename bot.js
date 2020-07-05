@@ -7,16 +7,14 @@ bot.on('message', (message) => {
     if(message.content.split("'").join("").split("-").join("").split(" ").join("").split(".").join("").split(",").join("").replace(/(.)\1+/g, '$1').toLowerCase().includes('razan') && message.author.id != '321317901086883840'){
         message.delete();
         message.channel.send('Fuck you, '+message.author+'.').then(d_msg => { d_msg.delete(4000); });
-        break;
     };
 
     if(message.content.split("'").join("").split("-").join("").split(" ").join("").split(".").join("").split(",").join("").replace(/(.)\1+/g, '$1').toLowerCase().includes('razan') && message.author.id == '321317901086883840') {
         message.delete();
         message.channel.send('I am sorry senpai '+message.author+', but you have programmed me to delete that message.').then(d_msg => { d_msg.delete(4000); });
-        break;
     };
 
-    if(message.content.slice(0, 7) == 'sensei ') {
+    if(message.content.slice(0, 7) == 'sensei ' && message.content != 'sensei mock') {
         message.delete();
         text = message.content.substr(7)
         text = (text).split("")
@@ -32,10 +30,9 @@ bot.on('message', (message) => {
             }
         }
         message.channel.send(text.join(""));
-        break;
     };
 
-    if(message.content.slice(0, 8) == 'sensei2 ') {
+    if(message.content.slice(0, 8) == 'sensei2 ' && message.content != 'sensei mock') {
         message.delete();
         text = message.content.substr(8)
         text = (text).split("")
@@ -51,7 +48,6 @@ bot.on('message', (message) => {
             }
         }
         message.channel.send(text.join(""));
-        break;
     };
 
     if(message.content == 'sensei mock') {
@@ -70,7 +66,6 @@ bot.on('message', (message) => {
             }
         }
         message.channel.send(text.join(""));
-        break;
     };
     cached_message = message.content
 });
