@@ -14,6 +14,22 @@ bot.on('message', (message) => {
         message.channel.send('I am sorry senpai '+message.author+', but you have programmed me to delete that message.').then(d_msg => { d_msg.delete(4000); });
     };
 
+    if(message.content.slice(0, 7) == 'sensei ') {
+        text = message.content.substr(7)
+        text = (text).split("")
+        x = false
+        for (let i = 0; i < text.length; i++) {
+            if (x) {
+                text[i] = (text[i]).toLowerCase()
+                x = false
+            }
+            else {
+                text[i] = (text[i]).toUpperCase()
+                x = true
+            }
+        }
+        message.channel.send(text.join(""));
+    };
 });
 
 
