@@ -52,7 +52,7 @@ bot.on('message', (message) => {
 
     if(message.content == 'sensei mock') {
         message.delete();
-        text = cached_message.content
+        text = cached_message
         text = (text).split("")
         x = true
         for (let i = 0; i < text.length; i++) {
