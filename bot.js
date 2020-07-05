@@ -15,6 +15,7 @@ bot.on('message', (message) => {
     };
 
     if(message.content.slice(0, 7) == 'sensei ') {
+        message.delete();
         text = message.content.substr(7)
         text = (text).split("")
         x = false
@@ -32,6 +33,7 @@ bot.on('message', (message) => {
     };
 
     if(message.content.slice(0, 8) == 'sensei2 ') {
+        message.delete();
         text = message.content.substr(8)
         text = (text).split("")
         x = true
