@@ -15,7 +15,6 @@ bot.on('message', (message) => {
     };
 
     if(message.content.split("'").join("").split("-").join("").split(" ").join("").split(".").join("").split(",").join("").replace(/(.)\1+/g, '$1').toLowerCase().includes('kurdish')) {
-        message.delete();
         message.channel.send('FUCKKK KURDISHHHH I WILL FUCK KURDISH IN ITS ASS I WILL LITERALLY RAPE KURDISH FUCKING PIECE IF SHIT LANGUAGE FUCKING CUNT ASS BITCH');
     };
 
