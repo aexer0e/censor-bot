@@ -14,7 +14,7 @@ bot.on('message', (message) => {
         message.channel.send('I am sorry senpai '+message.author+', but you have programmed me to delete that message.').then(d_msg => { d_msg.delete(4000); });
     };
 
-    if(message.content.split("'").join("").split("-").join("").split(" ").join("").split(".").join("").split(",").join("").replace(/(.)\1+/g, '$1').toLowerCase().includes('kurdish') && message.author.id != '665629105802313759') {
+    if(message.content.split("'").join("").split("-").join("").split(" ").join("").split(".").join("").split(",").join("").replace(/(.)\1+/g, '$1').toLowerCase().includes('kurdishlanguage') && message.author.id != '665629105802313759') {
         message.channel.send('FUCKKK KURDISHHHH I WILL FUCK KURDISH IN ITS ASS I WILL LITERALLY RAPE KURDISH FUCKING PIECE IF SHIT LANGUAGE FUCKING CUNT ASS BITCH');
     };
 
