@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node bot.js"
   },
-  "author": "",
-  "license": "assassin",
+  "author": "assassin",
+  "license": "MIT",
   "dependencies": {
     "discord.js": "^11.5.1"
   }
