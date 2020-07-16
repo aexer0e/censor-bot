@@ -9,6 +9,8 @@
   "author": "assassin",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^11.5.1"
+    "discord.js": "^11.6.4",
+    "translatte": "^2.5.8",
+    "unirest": "^0.6.0"
   }
 }
