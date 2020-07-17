@@ -94,7 +94,7 @@ bot.on('message', (message) => {
         text = message.content.substr(5)
         try {
             result = eval(text)
-            message.channel.send(`${text}=${result}`);
+            message.channel.send(`${text} = ${result}`);
         } catch (error) {
             message.channel.send('can\'t now, I\'m busy');
         }
