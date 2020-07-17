@@ -88,6 +88,16 @@ bot.on('message', (message) => {
         
             message.channel.send('`'+JSON.stringify(res.body.data.translations[0].translatedText).substr(1,(res.body.data.translations[0].translatedText).length)+'`');
         });
+    };
+
+    if(message.content.slice(0, 5) == 'calc ') {
+        text = message.content.substr(5)
+        try {
+            result = eval(text)
+            message.channel.send(`${text}=${result}`);
+        } catch (error) {
+            message.channel.send('can\'t now, I\'m busy');
+        }
     }
 
     cached_message = message.content
